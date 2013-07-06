@@ -47,6 +47,7 @@ ul{
 	list-style: none;
 }
 /*-------------misc styles-----------------*/
+
 .intro{
 	font-family: "fauna one", times, serif;
 	font-size: 18px;
@@ -62,9 +63,9 @@ ul{
 .picture-link{
 	display: block;
 	float: left;
-	width: 30%;
-	margin: 1.5%;
+	margin: 10px 10px;
 	position: relative;
+	width: 300px;
 }
 .picture-link img{
 	width: 100%;
@@ -72,6 +73,7 @@ ul{
 #crunchstats:before,
 #skyline:before,
 #tb-2:before,
+#tsl-1:before,
 #tsl-2:before,
 #tunnel:before,
 #union:before,
@@ -81,12 +83,9 @@ ul{
 	display: none;
 	font-family: helvetica;
 	font-size: 24px;
-	max-width: 288px;
-	padding-top: 20%; 
 	position: absolute;
 		top: 0;
 		left: 0;
-		height: 64%;
 	text-align: center;
 	width: 100%;
 }
@@ -95,6 +94,9 @@ ul{
 }
 #tb-2:before{
 	content: "team buffet usa";
+}
+#tsl-1:before{
+	content: "my first page";
 }
 #tsl-2:before{
 	content: "my old page";
@@ -114,6 +116,7 @@ ul{
 #crunchstats:hover:before,
 #skyline:hover:before,
 #tb-2:hover:before,
+#tsl-1:hover:before,
 #tsl-2:hover:before,
 #tunnel:hover:before,
 #union:hover:before,
@@ -188,22 +191,32 @@ footer p{
 	text-align: center;
 	width: 100%;
 }
-/*------------response at max-width 720px--------------*/
+/*------------response at max-width 960px--------------*/
 
-@media (max-width: 720px){
-	.page-header h1{
-		font-size: 24px;
+@media (max-width: 959px){
+	.container{
+		max-width: 800px;
 	}
-	#crunchstats:before,
-	#skyline:before,
-	#tb-2:before,
-	#tsl-2:before,
-	#tunnel:before,
-	#union:before,
-	#wedev:before{
-		font-size: 18px;
+	.picture-link{
+		width: 380px;
 	}
 
+}
+@media (max-width: 799px){
+	.container{
+		max-width: 640px;
+	}
+	.picture-link{
+		width: 300px;
+	}
+}
+@media (max-width: 639px){
+	.container{
+		max-width: 400px;
+	}
+	.picture-link{
+		width: 380px;
+	}
 }
 /*------------response at max-width 600px--------------*/
 
@@ -235,9 +248,7 @@ footer p{
 	}
 	.picture-link{
 		float: none;
-		margin: 0 auto 10px;
 		text-align: center;
-		width: 80%;
 	}
 	#crunchstats:before,
 	#skyline:before,
