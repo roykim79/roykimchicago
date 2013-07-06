@@ -1,0 +1,260 @@
+/*-------------------------------------
+red = #ef2900
+dark blue = #4B5966
+
+--------------------------------------*/
+body{
+
+}
+/*-----------typography-------------*/
+
+h1, h2, h3, h4{
+	font-family: "fauna one", times, serif;
+}
+h1{
+	font-size: 36px;
+	line-height: 45px;
+}
+h2{
+	font-size: 24px;
+	line-height: 30px;
+}
+h3{
+	font-size: 18px;
+	line-height: 22px;
+}
+h4{
+	font-size: 16px;
+	line-height: 20px;
+}
+p{
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/*---------------links--------------------*/
+
+a{
+	color: #ef2900;
+	text-decoration: none;
+}
+a:hover{
+	color: #4B5966;
+}
+/*----------------lists-------------------*/
+ul{
+	list-style: none;
+}
+/*-------------misc styles-----------------*/
+.intro{
+	font-family: "fauna one", times, serif;
+	font-size: 18px;
+	line-height: 36px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.page-header{
+	border-bottom: 2px solid #ef2900;
+	color: #A1A09B;
+	margin-bottom: 30px;
+}
+.picture-link{
+	display: block;
+	float: left;
+	width: 30%;
+	margin: 1.5%;
+	position: relative;
+}
+.picture-link img{
+	width: 100%;
+}
+#crunchstats:before,
+#skyline:before,
+#tb-2:before,
+#tsl-2:before,
+#tunnel:before,
+#union:before,
+#wedev:before{
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	display: none;
+	font-family: helvetica;
+	font-size: 24px;
+	max-width: 288px;
+	padding-top: 20%; 
+	position: absolute;
+		top: 0;
+		left: 0;
+		height: 64%;
+	text-align: center;
+	width: 100%;
+}
+#crunchstats:before{
+	content: "crunchstats.com";
+}
+#tb-2:before{
+	content: "team buffet usa";
+}
+#tsl-2:before{
+	content: "my old page";
+}
+#skyline:before{
+	content: "work";
+}
+#tunnel:before{
+	content: "contact";
+}
+#union:before{
+	content: "blog";
+}
+#wedev:before{
+	content: "template";
+}
+#crunchstats:hover:before,
+#skyline:hover:before,
+#tb-2:hover:before,
+#tsl-2:hover:before,
+#tunnel:hover:before,
+#union:hover:before,
+#wedev:hover:before{
+	display: block;
+}
+/*------------------header-----------------*/
+header{
+	background: #9DBACC;
+	border-bottom: 5px solid #4B5966;
+	margin: 0 auto 20px;
+	width: 100%;
+}
+.icon{
+	border: 2px solid #4B5966;
+	border-radius: 20px;
+	color: #4B5966;
+	display: inline-block;
+	font-family: "pathway gothic one", sans-serif;
+	font-size: 21px;
+	line-height: 40px;
+	margin-top: 2px;
+	text-align: center;
+	vertical-align: top;
+	width: 25px;
+}
+#logo{
+	color: #fff;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 36px;
+	float: left;
+	letter-spacing: -2px;
+	line-height: 48px;
+}
+#logo:hover .icon{
+	border-color: #ef2900;
+	color: #ef2900;
+}
+/*-----------------nav--------------------*/
+
+nav{
+	float: right;
+}
+
+.main-nav li{
+	display: inline;
+}
+.current-page,
+.main-nav a{
+	font-family: "pathway gothic one", sans-serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 48px;
+	padding: 0 10px;
+	text-align: center;
+	text-decoration: none;
+}
+.current-page{
+	color: #fff;
+}
+.main-nav a:hover{
+	color: #fff;
+}
+/*----------------footer----------------*/
+footer{
+	margin-top: 20px;
+}
+footer p{
+	color: #888;
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+}
+/*------------response at max-width 720px--------------*/
+
+@media (max-width: 720px){
+	.page-header h1{
+		font-size: 24px;
+	}
+	#crunchstats:before,
+	#skyline:before,
+	#tb-2:before,
+	#tsl-2:before,
+	#tunnel:before,
+	#union:before,
+	#wedev:before{
+		font-size: 18px;
+	}
+
+}
+/*------------response at max-width 600px--------------*/
+
+@media (max-width: 600px){
+	nav{
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.current-page,
+	.main-nav a{
+		font-size: 24px;
+	}
+	#logo {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.page-header h1{
+		text-align: center;
+	}
+	h2{
+		font-size: 18px;
+	}
+	p{
+		font-size: 14px;
+	}
+	.picture-link{
+		float: none;
+		margin: 0 auto 10px;
+		text-align: center;
+		width: 80%;
+	}
+	#crunchstats:before,
+	#skyline:before,
+	#tb-2:before,
+	#tsl-2:before,
+	#tunnel:before,
+	#union:before,
+	#wedev:before{
+		display: block;
+		font-size: 24px;
+		max-width: 432px;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
