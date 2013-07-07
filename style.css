@@ -70,19 +70,13 @@ ul{
 .picture-link img{
 	width: 100%;
 }
-#crunchstats:before,
-#skyline:before,
-#tb-2:before,
-#tsl-1:before,
-#tsl-2:before,
-#tunnel:before,
-#union:before,
-#wedev:before{
+.picture-link:before{
 	background: rgba(0,0,0,.4);
 	color: #fff;
 	display: none;
-	font-family: helvetica;
+	font-family: helvetica, arial, sans-serif;
 	font-size: 24px;
+	line-height: 169px;
 	position: absolute;
 		top: 0;
 		left: 0;
@@ -113,14 +107,7 @@ ul{
 #wedev:before{
 	content: "template";
 }
-#crunchstats:hover:before,
-#skyline:hover:before,
-#tb-2:hover:before,
-#tsl-1:hover:before,
-#tsl-2:hover:before,
-#tunnel:hover:before,
-#union:hover:before,
-#wedev:hover:before{
+.picture-link:hover:before{
 	display: block;
 }
 /*------------------header-----------------*/
@@ -156,7 +143,6 @@ header{
 	color: #ef2900;
 }
 /*-----------------nav--------------------*/
-
 nav{
 	float: right;
 }
@@ -191,7 +177,7 @@ footer p{
 	text-align: center;
 	width: 100%;
 }
-/*------------response at max-width 960px--------------*/
+/*---------------media queries------------------*/
 
 @media (max-width: 959px){
 	.container{
@@ -200,32 +186,46 @@ footer p{
 	.picture-link{
 		width: 380px;
 	}
-
+	.picture-link:before{
+		line-height: 214px;
+	}
 }
 @media (max-width: 799px){
 	.container{
 		max-width: 640px;
 	}
+	.page-header h1{
+		font-size: 24px;
+	}
 	.picture-link{
 		width: 300px;
+	}
+	.picture-link:before{
+		line-height: 169px;
 	}
 }
 @media (max-width: 639px){
 	.container{
-		max-width: 400px;
+		max-width: 500px;
+	}
+	.intro{
+		font-size: 16px;
 	}
 	.picture-link{
-		width: 380px;
+		width: 480px;
+	}
+	.picture-link:before{
+		line-height: 270px;
 	}
 }
-/*------------response at max-width 600px--------------*/
-
-@media (max-width: 600px){
+@media (max-width: 499px){
 	nav{
 		display: block;
 		float: none;
 		text-align: center;
-		width: 100%;
+	}
+	.container{
+		max-width: 400px;
 	}
 	.current-page,
 	.main-nav a{
@@ -233,39 +233,16 @@ footer p{
 	}
 	#logo {
 		display: block;
-		float: none;
 		text-align: center;
 		width: 100%;
-	}
-	.page-header h1{
-		text-align: center;
-	}
-	h2{
-		font-size: 18px;
-	}
-	p{
-		font-size: 14px;
 	}
 	.picture-link{
-		float: none;
-		text-align: center;
+		width: 380px;
 	}
-	#crunchstats:before,
-	#skyline:before,
-	#tb-2:before,
-	#tsl-2:before,
-	#tunnel:before,
-	#union:before,
-	#wedev:before{
+	.picture-link:before{
 		display: block;
-		font-size: 24px;
-		max-width: 432px;
-		width: 100%;
+		line-height: 214px;
 	}
 }
-
-
-
-
 
 
