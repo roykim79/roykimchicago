@@ -3,54 +3,247 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>Roy Kim</title>
-		<link href='http://fonts.googleapis.com/css?family=Fauna+One|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-		<link rel='stylesheet' href='grid-reset.css'>
-		<link rel='stylesheet' href='style.css'>
+		<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One|Roboto+Condensed|Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='css/reset-grid-16.css'>
+		<link rel='stylesheet' href='css/style.css'>
 	</head>
 	<body>
-		<header class="group">
-			<div class="container">
-				<a href="index.html" id="logo">
-					<span class="icon">RYK</span> Roy Kim</a>
-				<nav>
-					<ul class="main-nav group">
-						<li>
-							<a href="blog.html">BLOG</a>
-						</li>
-						<li>
-							<a href="work.html">WORK</a>
-						</li>
-						<li>
-							<a href="contact.html">CONTACT</a>
-						</li>
-					</ul>
+		<header>
+			<div class="container group">
+				<a class="logo" href="#home-intro"><span class="icon">RK</span> Roy Kim</a>
+				<nav class="main-nav">
+				<ul>
+					<li><a href="#home-intro">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 				</nav>
 			</div>
 		</header>
-		<section class="page-header container group">
-			<h1>making the world a better place, one pixel at a time</h1>
+		<section id="home-intro">
+			<div class="container">
+				<div class="box container">
+    				<ul>
+    				  <li class="front">RK</li>
+    				  <li class="back">@Chicago</li>
+    				  <li class="left"><a href="#about">About</a></li>
+    				  <li class="right"><a href="#portfolio">Portfolio</a></li>
+    				  <li class="top"><a href="#blog">Blog</a></li>
+    				  <li class="bottom"><a href="#contact">Contact</a></li>
+    				</ul>
+    				<p class="range"><input type="range" min="-360" max="360" value="0"></p>
+  				</div>
+				<h1 class="banner">ROY KIM</h1>
+				<h2 class="slogan">Never Imitated, Often Duplicated</h2>
+			</div>
 		</section>
-		<section class="container group">
-			<p class="intro">
-				Hi, I'm Roy Kim from Chicago and I love this city. I'm into all things <a href="http://www.google.com" target='blank'>Google</a>, <a href="http://www.teambuffetusa.com" target='blank'>stuffing my face</a> and playing
-				<a href="http://en.wikipedia.org/wiki/Poker" target='blank'>poker</a>. I started learning front-end development in the spring of 2013 at <a href="http://www.starterleague.com" target='blank'>The Starter League</a> and this is my site. <b>It's under construction so please pardon the dust.</b>
-			</p>
+		<section id="about" class="">
+			<div class="container">
+				<h1 class="section-title">It's All About Me</h1>
+				<p class="squeeze">
+					If you haven't figured it out yet, my name is Roy and I was born and raised in Chicago. I started learning front-end development in the Spring of 2013 at <a href="http://www,starterleague.com">The Starter League </a>and I'm loving it. I'm into all things <a href="http://www.google.com" target='blank'>Google</a>, <a href="http://www.teambuffetusa.com" target='blank'>stuffing my face</a> and playing <a href="http://en.wikipedia.org/wiki/Poker" target='blank'>poker</a>. 
+				</p>
+				<p class="squeeze">
+					Despite just starting, I plan on taking the road that leads to being a <strong>full-stack developer</strong> one layer at a time. I am currently very comfortable with <strong>HTML5</strong> and <strong>CSS3</strong> but I know my code can be more semantic and D.R.Y. I recently started diving into <strong>jQuery</strong> and <strong>JavaScript</strong> and I want more. During this short period of time, I have also gained a lot of experience with <strong>Git</strong>, <strong>SCSS</strong> and working in a <strong>Rails</strong> environment, which happens to be next in my queue.
+				</p>
+			</div>
 		</section>
-		<section class="container group">
-			<a href="blog.html" class="picture-link" id="union">
-				<img src="img/union.png">
-			</a>
-			<a href="work.html" class="picture-link" id="skyline">
-				<img src="img/skyline.png">
-			</a>
-			<a href="contact.html" class="picture-link" id="tunnel">
-				<img src="img/tunnel.png">
-			</a>
+		<section id="portfolio">
+			<div class="container">
+				<h1 class="section-title">Made in Chicago</h1>
+				<ul class="portfolio-content-list group">
+					<li>
+						<a href="#portfolio-item-7"><img class="tile" src="img/crunchstats-ss.png"></a>
+					</li>
+					<li>
+						<a href="#portfolio-item-6"><img class="tile" src="img/happilabs-ss.png"></a>
+					</li>
+					<li>
+						<a href="#portfolio-item-5"><img class="tile" src="img/lyricexchange-ss.png"></a>
+					</li>
+					<li>
+						<a href="#portfolio-item-4"><img class="tile" src="img/template-ss.png"></a>
+					</li>
+					<li>
+						<a href="#portfolio-item-3"><img class="tile" src="img/tsl-2-ss.png"></a>
+					</li>
+					<li>
+						<a href="#portfolio-item-2"><img class="tile" src="img/tsl-1-ss.png"></a>
+					</li>
+					<li>
+						<a href="#portfolio-item-1"><img class="tile" src="img/tb-ss.png"></a>
+					</li>
+				</ul>
+				<article id="portfolio-item-7" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://www.crunchstats.com" target="blank">
+							<img src="img/crunchstats-ss.png">
+							<h3 class="center">Crunch Stats</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							Crunchstats gives a birds eye view of of startup funding using the CrunchBase API. I was the sole front-end developer for what was my first experience working in a Rails environment and using Git for what it was intended to do.
+						</p>
+						<p>
+							In hind sight, I think I went overboard with gradients and choosing typefaces is not my forte.
+						</p>
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+				<article id="portfolio-item-6" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://www.happilabs.org" target="blank">
+							<img src="img/happilabs-ss.png">
+							<h3 class="center">Happi Labs</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							Happi Labs provides scientist with the data on the lab equipment they use daily. The problem that currently exists is the lack of oversight on purchases combined with the apathy from the scientist who never have to pull out their checkbook. This is where Happi Labs comes in. They provide reviews on products as well as a list of prices from different distributors showing them how much money can be saved by switching vendors.
+						</p>
+						<p>
+							I was brought on as a UI engineer to clean up the front-end as well as build out some new features. The difficulty came from the code being passed around so many times and still having fragments of Bootstrap conflicting with styles.
+						</p>
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+				<article id="portfolio-item-5" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://www.thelyricexchange.com" target="blank">
+							<img src="img/lyricexchange-ss.png">
+							<h3 class="center">The Lyric Exchange</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							I'm not gonna lie, I still don't know what they do. This was a small freelance job for a friend entering the Lean Startup Challenge. I was told what they wanted and to make it look nice. I didn't ask any more questions. This was an oportunity to start using complex CSS selectors and transforms.
+						</p>
+						
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+				<article id="portfolio-item-4" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://wedevthat.com" target="blank">
+							<img src="img/template-ss.png">
+							<h3 class="center">Just a Template</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur 	adipisicing elit, sed do eiusmod tempor incididunt 	ut labore et dolore magna aliqua. Ut enim ad minim 	veniam, quis nostrud exercitation ullamco laboris 	nisi ut aliquip ex ea commodo consequat. Duis aute 	irure dolor in reprehenderit in voluptate velit 	esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur 	adipisicing elit, sed do eiusmod tempor incididunt 	ut labore et dolore magna aliqua. Ut enim ad minim 	veniam, quis nostrud exercitation ullamco laboris 	nisi ut aliquip ex ea commodo consequat. Duis aute 	irure dolor in reprehenderit in voluptate velit 	esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+				<article id="portfolio-item-3" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://roykim79.github.io/Resume" target="blank">
+							<img src="img/tsl-2-ss.png">
+							<h3 class="center">My Previous Site</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							Inspired by 2 of the most influential designers of the 20th century, <a href="http://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles and Ray Eames</a>, I thought I would give my understanding of the box model a test. The design was pure CSS. If you're still browsing with IE 8 or below, I don't know how you found my site but you probably think its ugly. Graceful degredation was nowhere on my mind when I made this.
+						</p>
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+				<article id="portfolio-item-2" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://roykim79.github.io/Resume/portfolio/tsl1" target="blank">
+							<img src="img/tsl-1-ss.png">
+							<h3 class="center">My First Site</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							This site will remain in the archives because it was the first site I made after 3 classes at <a href="http://www.starterleague.com">The Starter League</a> and it has sentimental value to me. Ok, I lied, it costs me nothing to keep and host it and my portfolio could use a little more substance. I've only been doing this for 4 months! What more do you want?
+						</p>
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+				<article id="portfolio-item-1" class="portfolio-item group">
+					<div class="portfolio-item-link">
+						<a href="http://www.teambuffetusa.com">
+							<img src="img/tb-ss.png">
+							<h3 class="center">Team Buffet USA</h3>
+						</a>
+					</div>
+					<div class="portfolio-item-description">
+						<p>
+							Yes, this is for real. If you actually read this far I'm sure you realized I'm kinda strange and so are my friends. It looks like crap but this is the second site I've every made and I was just trying new things.
+						</p>
+						<p>
+							What's even crazier than the fact that I have a second paragraph on this and actually paid $10 for the domain? I have every intention of building out a new one that I expect will be my Magnum opus for maybe a month. Give me a job and I'll drop this project in a heartbeat.
+						</p>
+						<a class="back" href="#portfolio">Back</a>
+					</div>
+				</article>
+			</div>
 		</section>
-		
-		
+		<section id="blog">
+			<div class="container">
+				<h1 class="section-title">Blah Blah Blah</h1>
+				<ol class="blog-content-list">
+					<li><a href="#blog-entry-2">Writing CSS Is Only As Difficult As You Make It <span class="blog-entry-date">August 12, 2013</span></a></li>
+					<li><a href="#blog-entry-1">How I Wound Up Here <span class="blog-entry-date">April 1, 2013</span></a></li>
+				</ol>
+				<article class="blog-entry squeeze" id="blog-entry-2">
+					<div class="blog-entry-details">
+						<h2 class="blog-entry-title">Writing CSS Is Only As 	Difficult As You Make It</h2>
+						<p class="blog-entry-date">August 12, 2013</p>
+					</div>
+					<div class="blog-entry-content">
+						<p>
+							If you're struggling with your CSS, it's probably 	your fault. We all have the ability to plan ahead 	but we don't always choose to. As I've been 	learning to write HTML and CSS, my instructors 	always made it a point to bring up best practices 	and it was drilled into my head. Following a good 	order of operations was one of the topics brought 	up.
+						</p>
+						<p>
+							After having an A-HA moment I usually get the itch 	to code. Everything is in a div, I'm bouncing from 	my CSS to my HTML to my browser and refreshing 	after every other line. This is fine when you're 	playing with it, but as the content grows, the 	importance of planning ahead becomes more apparent.	 Your code will be "D.R.Y" and you'll spend less 	time inspecting elements.
+						</p>
+						<p>
+							Before firing up sublime, there needs to be some 	sort of wireframe. The more detailed it is, the 	easier the rest of the job will be. Next, markup 	your HTML and make sure all the content is there 	and in the order you want it. If you're happy with 	your results go ahead and style it up. The idea is 	to build everything one layer at a time. It's very 	unlikely to never have to go back and make changes 	but the goal is to minimize the number of times 	this happens. What I'm writing here isn't a secret 	but as you grow in anything, it can be easy to 	forget the basics.
+						</p>
+						<a class="back" href="#blog">Back</a>
+					</div>
+				</article>
+				<article class="blog-entry squeeze" id="blog-entry-1">
+					<div class="blog-entry-details">
+						<h2 class="blog-entry-title">How I Wound Up Here</h2>
+						<p class="blog-entry-date">April 1, 2013</p>
+					</div>
+					<div class="blog-entry-content">
+						<p>
+						The first thing I did to learn how to code was picking up one of those <i>FOR DUMMIES</i> books on coding and after about 60 pages or so I felt like a dummy. I knew this wasn't going to work. The next thing I did was turn to my best friend <a href="http://google.com" target="blank">Larry Page</a>. I learned so much from him and he's always there for me. He referred me to a bunch of free online courses and again, I knew this wasn't going to work. I had to have a real person teach me and looked into different colleges. One night I was out drinking with some friends and I was talking about this with one of my friends in the field and she said "My co-worker <a href="http://www.shayhowe.com" target="blank">Shay</a> teaches a class in the evenings at this place called code academy, he's <strong>awesome</strong>" (she really did say he's <strong>awesome</strong>). I went to the open house and all the reservations I had about spending $2000 for a 10 week course went out the window.
+						</p>
+						<a class="back" href="#blog">Back</a>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<h1 class="section-title">Holler @ me! Stalk me... Fork me?</h1>
+				<ul class="contact-list">
+					<li><a href="mailto:rykim79@gmail.com?"><span class="icon">e</span>rykim79@gmail.com</a></li>
+					<li><a href="http://www.facebook.com/roy.kim.925059" target="blank"><span class="icon">fb</span>facebook</a></li>
+					<li><a href="http://twitter.com/roykimchicago" target="blank"><span class="icon">t</span>twitter</a></li>
+					<li><a href="http://instagram.com/roykimchicago" target="blank"><span class="icon">i</span>instagram</a></li>
+					<li><a href="http://github.com/roykim79" target="blank"><span class="icon">gh</span>github</a></li>
+				</ul>
+			</div>
+		</section>
 		<footer>
-			<p>&copy; 2013 Roy Kim All Rights Reserved</p>
+			<div class="footer center container">&copy; 2013 Roy Kim</div>
 		</footer>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

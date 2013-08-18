@@ -1,0 +1,335 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b, strong{
+	font-weight: bold;
+}
+i, em{
+	font-style: italic;
+}
+/*GRID*/
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-13,
+.col-14,
+.col-15,
+.col-16 {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.pull-1, .push-1,
+.pull-2, .push-2,
+.pull-3, .push-3,
+.pull-4, .push-4,
+.pull-5, .push-5,
+.pull-6, .push-6,
+.pull-7, .push-7,
+.pull-8, .push-8,
+.pull-9, .push-9,
+.pull-10, .push-10,
+.pull-11, .push-11,
+.pull-12, .push-12,
+.pull-13, .push-13,
+.pull-14, .push-14,
+.pull-15, .push-15,
+.pull-16, .push-16 {
+  position: relative;
+}
+.col-1 {
+  width: 40px;
+}
+.col-2 {
+  width: 100px;
+}
+.col-3 {
+  width: 160px;
+}
+.col-4 {
+  width: 220px;
+}
+.col-5 {
+  width: 280px;
+}
+.col-6 {
+  width: 340px;
+}
+.col-7 {
+  width: 400px;
+}
+.col-8 {
+  width: 460px;
+}
+.col-9 {
+  width: 520px;
+}
+.col-10 {
+  width: 580px;
+}
+.col-11 {
+  width: 640px;
+}
+.col-12 {
+  width: 700px;
+}
+.col-13 {
+  width: 760px;
+}
+.col-14 {
+  width: 820px;
+}
+.col-15 {
+  width: 880px;
+}
+.col-16 {
+  width: 940px;
+}
+.prefix-1 {
+  padding-left: 60px;
+}
+.prefix-2 {
+  padding-left: 120px;
+}
+.prefix-3 {
+  padding-left: 180px;
+}
+.prefix-4 {
+  padding-left: 240px;
+}
+.prefix-5 {
+  padding-left: 300px;
+}
+.prefix-6 {
+  padding-left: 360px;
+}
+.prefix-7 {
+  padding-left: 420px;
+}
+.prefix-8 {
+  padding-left: 480px;
+}
+.prefix-9 {
+  padding-left: 540px;
+}
+.prefix-10 {
+  padding-left: 600px;
+}
+.prefix-11 {
+  padding-left: 660px;
+}
+.prefix-12 {
+  padding-left: 720px;
+}
+.prefix-13 {
+  padding-left: 780px;
+}
+.prefix-14 {
+  padding-left: 840px;
+}
+.prefix-15 {
+  padding-left: 900px;
+}
+.suffix-1 {
+  padding-right: 60px;
+}
+.suffix-2 {
+  padding-right: 120px;
+}
+.suffix-3 {
+  padding-right: 180px;
+}
+.suffix-4 {
+  padding-right: 240px;
+}
+.suffix-5 {
+  padding-right: 300px;
+}
+.suffix-6 {
+  padding-right: 360px;
+}
+.suffix-7 {
+  padding-right: 420px;
+}
+.suffix-8 {
+  padding-right: 480px;
+}
+.suffix-9 {
+  padding-right: 540px;
+}
+.suffix-10 {
+  padding-right: 600px;
+}
+.suffix-11 {
+  padding-right: 660px;
+}
+.suffix-12 {
+  padding-right: 720px;
+}
+.suffix-13 {
+  padding-right: 780px;
+}
+.suffix-14 {
+  padding-right: 840px;
+}
+.suffix-15 {
+  padding-right: 900px;
+}
+.push-1 {
+  right: -60px;
+}
+.push-2 {
+  right: -120px;
+}
+.push-3 {
+  right: -180px;
+}
+.push-4 {
+  right: -240px;
+}
+.push-5 {
+  right: -300px;
+}
+.push-6 {
+  right: -360px;
+}
+.push-7 {
+  right: -420px;
+}
+.push-8 {
+  right: -480px;
+}
+.push-9 {
+  right: -540px;
+}
+.push-10 {
+  right: -600px;
+}
+.push-11 {
+  right: -660px;
+}
+.push-12 {
+  right: -720px;
+}
+.push-13 {
+  right: -780px;
+}
+.push-14 {
+  right: -840px;
+}
+.push-15 {
+  right: -900px;
+}
+.pull-1 {
+  right: 60px;
+}
+.pull-2 {
+  right: 120px;
+}
+.pull-3 {
+  right: 180px;
+}
+.pull-4 {
+  right: 240px;
+}
+.pull-5 {
+  right: 300px;
+}
+.pull-6 {
+  right: 360px;
+}
+.pull-7 {
+  right: 420px;
+}
+.pull-8 {
+  right: 480px;
+}
+.pull-9 {
+  right: 540px;
+}
+.pull-10 {
+  right: 600px;
+}
+.pull-11 {
+  right: 660px;
+}
+.pull-12 {
+  right: 720px;
+}
+.pull-13 {
+  right: 780px;
+}
+.pull-14 {
+  right: 840px;
+}
+.pull-15 {
+  right: 900px;
+}
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
