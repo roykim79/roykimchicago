@@ -1,27 +1,25 @@
-/************ Table of Contents *************/
-/************* Table of Contents ************/
-
-/*	Base 									*/
-/*		typography							*/
-/*											*/
-/*	Components								*/
-/*		alerts								*/
-/*		buttons								*/
-/*		forms								*/
-/*		lists								*/
-/*		nav									*/
-/*											*/
-/*	Modules									*/
-/*		footer								*/
-/*		header								*/
-/*		section								*/
-/*											*/
-/*	State									*/
-/*											*/
-/*	Responsive								*/
-
-/************* Table of Contents ************/
-/************* Table of Contents ************/
+/************ Table of Contents *************
+	************* Table of Contents *********	
+	*	Base 									
+	*		typography							
+	*											
+	*	Components								
+	*		alerts								
+	*		buttons								
+	*		forms								
+	*		lists								
+	*		nav									
+	*											
+	*	Modules									
+	*		footer								
+	*		header								
+	*		section								
+	*											
+	*	State									
+	*											
+	*	Responsive									
+	************* Table of Contents *********
+	************* Table of Contents *********/
 
 /********************* Base *****************/
 /********************* Base *****************/
@@ -109,7 +107,7 @@ p {
 	font-family: "roboto slab";
 	font-size: 16px;
 	line-height: 24px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .blog-entry-date {
 	color: #888;
@@ -141,8 +139,6 @@ ol,
 ul {
 	list-style: none;
 }
-.portfolio-content-list {}
-.blog-content-list {}
 
 /* Nav */
 
@@ -399,11 +395,129 @@ section {
 	        transform: scale(1.1);
 }
 
-/********************** State *******************/
+/******************* Responsive *****************/
+/******************* Responsive *****************/
+/******************* Responsive *****************/
 
-.hidden {
-	display: none;
+@media (max-width: 1050px) {
+	.banner {
+		font-size: 250px;
+		padding: 30px 0;
+		word-spacing: 250px;
+	}
 }
 
-
-
+@media (max-width: 900px) {
+	.squeeze {
+		width: 90%;
+	}
+	.banner {
+		font-size: 250px;
+		padding: 20px 0;
+		word-spacing: 150px;
+	}
+	.blog-content-list a {
+		color: #fff;
+		font-size: 21px;
+		line-height: 30px;
+		margin-left: 0px;
+	}
+	.section-title {
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 40px;
+	}
+	.contact-list a {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.slogan {
+		font-size: 30px;
+	}
+	.box li {
+   		font-size: 24px;
+   		line-height: 100px;
+	}
+	.box ul {
+		height: 100px;
+   		margin: 50px auto;
+   		width: 100px;
+	}
+	.box .front {
+   		-webkit-transform: translateZ(50px);
+   		   -moz-transform: translateZ(50px);
+   		     -o-transform: translateZ(50px);
+   		        transform: translateZ(50px);
+	}
+	.box .back {
+	   	-webkit-transform: rotateY(180deg) translateZ(50px);
+	   	   -moz-transform: rotateY(180deg) translateZ(50px);
+	   	     -o-transform: rotateY(180deg) translateZ(50px);
+	   	       transform: rotateY(180deg)  translateZ(50px);
+	}
+	.box .left {
+	    -webkit-transform: rotateY(-90deg) translateZ(50px);
+	       -moz-transform: rotateY(-90deg) translateZ(50px);
+	         -o-transform: rotateY(-90deg) translateZ(50px);
+	            transform: rotateY(-90deg) translateZ(50px);
+	}
+	.box .right {
+	    -webkit-transform: rotateY(90deg) translateZ(50px);
+	       -moz-transform: rotateY(90deg) translateZ(50px);
+	         -o-transform: rotateY(90deg) translateZ(50px);
+	            transform: rotateY(90deg) translateZ(50px);
+	}
+	.box .top {
+	    -webkit-transform: rotateX(90deg) translateZ(50px);
+	       -moz-transform: rotateX(90deg) translateZ(50px);
+	         -o-transform: rotateX(90deg) translateZ(50px);
+	            transform: rotateX(90deg) translateZ(50px);
+	}
+	.box .bottom {
+	    -webkit-transform: rotateX(-90deg) translateZ(50px);
+	       -moz-transform: rotateX(-90deg) translateZ(50px);
+	         -o-transform: rotateX(-90deg) translateZ(50px);
+	            transform: rotateX(-90deg) translateZ(50px);
+	}
+	.tile {
+		margin: 1.5%;
+		width: 45%;
+	}
+}
+@media (max-width: 800px) {
+	.banner {
+		font-size: 250px;
+		padding: 20px 0;
+		word-spacing: 30px;
+	}
+	.blog-content-list li {
+		padding-bottom: 20px;
+	}
+	.blog-entry-date {
+		display: block;
+		height: 20px;
+	}
+	.box {
+		display: none;
+	}
+	.portfolio-item-link h3 {
+		top: 10px;
+}
+	.portfolio-item-description {
+		padding: 30px 0px 20px;
+		width: 55%;
+}
+	.range {
+		display: none;
+	}
+}
+@media (max-width: 650px) {
+	.banner {
+		font-size: 200px;
+		padding: 20px 0;
+		word-spacing: 30px;
+	}
+	.squeeze {
+		width: 100%;
+	}
+}
