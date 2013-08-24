@@ -505,7 +505,6 @@ section {
 }
 	.portfolio-item-description {
 		padding: 30px 0px 20px;
-		width: 55%;
 }
 	.range {
 		display: none;
@@ -519,5 +518,50 @@ section {
 	}
 	.squeeze {
 		width: 100%;
+	}
+}
+@media (max-width: 500px) {
+	.container {
+		width: 95%;
+	}
+	.logo {
+		display: block;
+		text-align: center;
+	}
+	.main-nav {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.main-nav li {
+		display: inline-block;
+		float: none;
+	}
+	.main-nav li a {
+		font-size: 20px;
+	}
+	section {
+		padding: 100px 0;
+	}
+	.banner {
+		font-size: 150px;
+	}
+	.slogan {
+		font-size: 24px;
+	}
+	.portfolio-item-link {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 95%
+	}
+	.portfolio-item-description {
+		float: none;
+		width: 95%;
+	}
+	.tile {
+		float: none;
+		margin: 0 auto;
+		width: 95%;
 	}
 }
