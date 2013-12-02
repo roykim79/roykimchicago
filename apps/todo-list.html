@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../css/todo-list.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8" />
+<title>JS Bin</title>
+</head>
+<body>
+  <section class="form-container">
+     <h2>My To Do List</h2>
+    <form action="#" id="new-task">
+      <input id="todo-input" class="form-control" type="text" placeholder="Enter a new task...">
+    </form>
+    <div class="stat"><span id="todo-count">0</span> Tasks</div>
+    <div class="stat"><span id="doing-count">0</span> In Progress</div>
+    <div class="stat"><span id="done-count">0</span> Done</div>
+    <ul id="todo"></ul>
+  </section>
+  
+  <script id="todo-item" type="text/template">
+    <li data-id="<%= id %>" class="<%= status %>">
+      <span class="status-col">&nbsp;</span>
+      <span class="status"><%= status %></span>
+      <span class="edit-status">
+        <form action="#">
+          <select name="status" class="status">
+            <option value="do">Do</option>
+            <option value="doing">Doing</option>
+            <option value="done">Done</option>
+          </select>
+        </form>
+      </span>
+      <span class="name"><%= name %></span>
+      <span class="edit-name">
+        <form action="#">
+          <input class="edit-name-input" class="form-control" type="text">
+        </form>
+      </span>
+      <a class="remove" href="#">x</a>
+    </li>
+  </script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://documentcloud.github.io/underscore/underscore-min.js"></script>
+  <script src="../js/todo-list.js"></script>
+</body>
+</html>

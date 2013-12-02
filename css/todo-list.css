@@ -1,0 +1,101 @@
+h2 {
+  	font-size: 18px;
+  	text-align: center;
+}
+.stat {
+  	border: 1px solid #ccc;
+  	border-radius: 3px;
+  	display: inline-block;
+  	margin-bottom: 20px;
+  	padding: 10px;
+  	width: 120px;
+}
+.form-container {
+  	margin: 15px;
+}
+form {
+  	padding-bottom: 10px;
+}
+#todo-count,
+#doing-count,
+#done-count {
+ 	border: 1px solid #ddd;
+ 	border-radius: 2px;
+ 	padding: 5px;
+}
+ul {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+  	list-style: none;
+ 	padding-left: 0;
+}
+li {
+  	border-bottom: 1px solid #ccc;
+  	font-size: 14px;
+  	height: 31px;
+  	line-height: 31px;
+  	padding: 0;
+}
+li.done .name{
+  	text-decoration: line-through;
+}
+span.status-col {
+	display: inline-block;
+	width: 10px;
+	height: 30px;
+}
+.do span.status-col {
+	background: #ddd;
+}
+.doing span.status-col {
+	background: #ff0;
+}
+.done span.status-col {
+	background: #88a;
+}
+select.status {
+ 	box-sizing: border-box;
+ 	border: 1px solid #ddd;
+  	height: 20px;
+}
+span.status {
+    border-right: 2px solid #ccc;
+    display: inline-block;
+    padding-right: 5px;
+    text-align: center;
+    width: 70px;
+}
+
+span.name {
+  	display: inline-block;
+ 	width: 80%;
+}	
+span.status:hover,
+span.name:hover {
+	cursor: pointer;
+}
+.edit-name form {
+  	display:inline-block;
+  	width: 80%;
+}
+.edit-status form {
+  	display: inline-block;
+}
+.edit-status,
+.edit-name {
+  	display: inline-block;
+  	display:none;
+  	width: 80%;
+}
+.edit-name-input {
+  border: none;
+  	display: inline-block;
+  	height: 29px;
+    line-height: 20px;
+  	width: 100%;
+}
+.edit-name-input:focus {
+  outline: 0;
+  z-index: -100;
+}
