@@ -1,8 +1,11 @@
 $(document).ready(function() {
+
+    // Hide all the articles and section and just show the landing portion
     $("article").hide();
     $("section").hide();
     $("#home-intro").show();
     
+    // Control how the slider changes the cubes rotation
     $("input[type=range]").change(function () {
         var degrees = $(this).val();
         var rotateStyle = "rotateX(" + degrees + "deg) rotateY(" + degrees/4 + "deg)";
@@ -10,6 +13,7 @@ $(document).ready(function() {
         $(".box ul").css("-webkit-transform", rotateStyle);
       });
     
+    // Navigation using jQuery
     $("header a").click(function () {
         var sectionId = $(this).attr("href");
         if (sectionId == "#portfolio") {
@@ -86,6 +90,17 @@ $(document).ready(function() {
     	}
     		$(destination).slideDown(300);
     });
+
+    // Show the sections from notes page
+    // Do I still want to keep this page linked to JS???
+    $("section.morning").show();
+    $("section.afternoon").show();
+    $("section.evening").show();
+
+    // Temporary take this out
+    $("#about").show();
+    $("#home-intro").hide();
+
 
 });
 
