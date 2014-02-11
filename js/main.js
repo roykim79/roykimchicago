@@ -97,10 +97,6 @@ $(document).ready(function() {
     $("section.afternoon").show();
     $("section.evening").show();
 
-    // Temporary take this out
-    $("#about").show();
-    $("#home-intro").hide();
-
 
 });
 
